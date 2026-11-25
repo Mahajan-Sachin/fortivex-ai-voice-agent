@@ -1,0 +1,43 @@
+[
+  {
+    "id": "fortivex_overview",
+    "title": "Fortivex AI Private Limited - Company Overview & Hubs",
+    "content": "Fortivex AI Private Limited builds intelligent systems, AI-powered automation, and enterprise software platforms. Headquarters: Bengaluru, India (BTM Layout, Outer Ring Road). Regional Hub: Dubai, UAE (Dubai Internet City, Building 3). Core tech stack includes Next.js, React, TypeScript, Python, LangChain/LangGraph, PostgreSQL, Supabase, Docker, and AWS. Fortivex operates 5 main verticals: Custom AI & Software Engineering, Fortivex CRM, Empowers Academy, Medivex AI, and Fortivex Attendance Management System (FAMS)."
+  },
+  {
+    "id": "custom_engineering",
+    "title": "Custom AI & Business Automation (B2B Engineering Services)",
+    "content": "Fortivex AI designs and engineers custom Intelligent Systems, Business Automation, Product Engineering, and Digital Transformation solutions. Capabilities include AI Agent Orchestration, Automated Document Processing, Intent Extraction, Smart Approval Workflows, Predictive Analytics, and ERP/CRM/API integrations. Best for enterprises or startups with unique workflows or multi-product requirements needing a tailored end-to-end build. Pricing is custom-scoped during a Solutions Architect discovery call."
+  },
+  {
+    "id": "fortivex_crm",
+    "title": "Fortivex CRM - Intelligent Client Relationship Management",
+    "content": "Fortivex CRM (crmw.fortivexaitech.com) is an intelligent CRM platform designed to streamline sales pipelines, automate customer interactions, capture and qualify leads, and provide data-driven analytics for enterprise growth. Ideal for sales teams, B2B startups, and institutes wanting automated lead tracking, pipeline visibility, and AI-assisted follow-ups."
+  },
+  {
+    "id": "empowers_academy",
+    "title": "Empowers Academy - AI Education & Career Transformation",
+    "content": "Empowers Academy (empowersacademy.com) is a live, mentor-led AI education platform focused on practical AI skills: Artificial Intelligence, Machine Learning, Generative AI, Agentic AI, MLOps, and Applied Projects with career transformation support. Ideal for individual students, working engineers transitioning into AI, or corporate teams seeking AI upskilling."
+  },
+  {
+    "id": "medivex_ai",
+    "title": "Medivex AI - Healthcare Education & Placement Platform",
+    "content": "Medivex AI (medivexai.com) offers specialized healthcare and life-sciences training in Clinical Research, Medical Coding, Clinical SAS, Biostatistics, Bioinformatics, and AI in Healthcare, with guaranteed internship pathways and placement support. Ideal for life-science/medical graduates and healthcare organizations."
+  },
+  {
+    "id": "fortivex_fams",
+    "title": "Fortivex Attendance Management System (FAMS)",
+    "content": "Fortivex Attendance Management System (famsw.empowersacademy.com) is a real-time attendance and academy operations platform for tracking students and faculty, managing access control, automating daily reporting, and viewing operational analytics dashboards. Ideal for coaching institutes, colleges, and EdTech academies."
+  },
+  {
+    "id": "custom_bundle_collision",
+    "title": "Multi-Product Collision & Custom Integrated Bundle",
+    "content": "When a customer (such as an EdTech founder, training institute, or multi-department enterprise) needs multiple Fortivex products together—for example combining Fortivex CRM for admissions/sales, FAMS for student attendance, and Empowers Academy or Medivex AI curriculum/LMS—Fortivex recommends a Custom Integrated Bundle engineered by our Solutions Architects rather than separate disconnected subscriptions. This unifies SSO, shared database/analytics, and custom branding."
+  },
+  {
+    "id": "security_and_architecture",
+    "title": "Security, Reliability & Enterprise Architecture",
+    "content": "Fortivex AI systems are built with cloud-native distributed architecture (Docker, AWS, PostgreSQL), TLS 1.3 encryption in transit, AES-256 encryption at rest, role-based access control, and strict tenant isolation so client data is never used to train public models. Supports 24/7 continuous monitoring across Bengaluru and Dubai hubs."
+  }
+]
+

@@ -116,27 +116,36 @@ export default function App() {
     audio.play().catch(() => setIsSpeaking(false));
   };
 
-  const startNewSession = async () => {
+  const startNewSession = async (retries = 8) => {
     setError("");
     stopAudio();
-    const res = await fetch("/api/session", { method: "POST" });
-    const data = await res.json();
-    setSession(data.session);
-    setWindows(data.office_windows || []);
-    setGreetingAudio(data.greeting_audio || "");
-    setTab("call");
+    for (let attempt = 0; attempt < retries; attempt++) {
+      try {
+        const res = await fetch("/api/session", { method: "POST" });
+        if (!res.ok) throw new Error("Backend starting...");
+        const data = await res.json();
+        setSession(data.session);
+        setWindows(data.office_windows || []);
+        setGreetingAudio(data.greeting_audio || "");
+        setTab("call");
+        fetch("/api/health").then((r) => r.ok && r.json()).then((h) => h && setHealth(h)).catch(() => {});
+        return;
+      } catch {
+        if (attempt === retries - 1) {
+          setError("Cannot reach backend on port 8000. Make sure the backend terminal is running.");
+          return;
+        }
+        await new Promise((r) => setTimeout(r, 1500));
+      }
+    }
   };
 
   const fetchCrm = async () => {
     const res = await fetch("/api/crm");
-    setCrmData(await res.json());
+    if (res.ok) setCrmData(await res.json());
   };
 
   useEffect(() => {
-    fetch("/api/health")
-      .then((r) => r.json())
-      .then(setHealth)
-      .catch(() => {});
     startNewSession();
     return () => {
       vadCleanupRef.current?.();
